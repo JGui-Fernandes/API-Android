@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_cadastro.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.Cadastrar">
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/txtEmailCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:hint="Email"
+        android:layout_marginHorizontal="50dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <!-- Senha EditText -->
+    <EditText
+        android:id="@+id/txtSenhaCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmailCadastrar"
+        android:layout_marginTop="30dp"
+        android:hint="Senha"
+        android:layout_marginHorizontal="50dp"
+        android:inputType="textPassword"
+        />
+
+    <!-- Confirmar Senha EditText -->
+    <EditText
+        android:id="@+id/txtConfirmaSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSenhaCadastrar"
+        android:layout_marginTop="30dp"
+        android:hint="Confirmar Senha"
+        android:layout_marginHorizontal="50dp"
+        android:inputType="textPassword"
+        />
+
+    <!-- Botão de Cadastro -->
+    <Button
+        android:id="@+id/btCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtConfirmaSenha"
+        android:layout_marginTop="30dp"
+        android:text="Cadastrar"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="30sp"
+        app:backgroundTint="@color/blueGremio"
+        />
+
+    <Button
+        android:id="@+id/btVoltarCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Voltar"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="15sp"
+        app:backgroundTint="@color/blueGremio"
+        />
+
+    <!-- ProgressBar -->
+    <ProgressBar
+        android:id="@+id/progressBarCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

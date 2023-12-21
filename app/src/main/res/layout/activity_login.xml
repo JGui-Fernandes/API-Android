@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_login.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.Login">
+
+    <TextView
+        android:id="@+id/txtDeputadosTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deputados"
+        android:textSize="80sp"
+        android:textColor="@color/blueGremio"
+        android:fontFamily="cursive"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDeputadosTitulo"
+        android:layout_marginTop="50dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="50dp"
+        />
+
+    <EditText
+        android:id="@+id/txtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmail"
+        android:layout_marginTop="30dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="50dp"
+        />
+
+    <Button
+        android:id="@+id/btEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSenha"
+        android:layout_marginTop="30dp"
+        android:text="Entrar"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="30sp"
+        app:backgroundTint="#00a1e7"
+        />
+
+    <Button
+        android:id="@+id/btCadastrarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btEnviar"
+        android:layout_marginTop="30dp"
+        android:text="Cadastrar"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="30sp"
+        app:backgroundTint="#00a1e7"
+
+        />
+
+    <!-- ProgressBar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
+

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "62907944432",
+    "project_id": "deputados-api",
+    "storage_bucket": "deputados-api.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62907944432:android:f40654870cfdc0b5d56135",
+        "android_client_info": {
+          "package_name": "com.ifsul.deputados_api"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6jWFHFN-tmHNYUXUgLqCemYUF3RTfEg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

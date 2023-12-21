@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.BiografiaDeputado">
+
+    <Button
+        android:id="@+id/btVoltarDeputado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Voltar"
+        android:textSize="15sp"
+        app:backgroundTint="@color/blueGremio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarBiografiaDeputado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/txtSiglaPartido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sigla"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtNascimento"
+/>
+
+    <TextView
+        android:id="@+id/txtNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nascimento"
+        android:textSize="25sp"
+        android:layout_below="@+id/txtUfDeputado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txtUfDeputado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="UF"
+        android:textSize="25sp"
+        android:layout_below="@+id/txtMunicipio"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txtMunicipio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cidade do sul"
+        android:layout_below="@id/txtNomeDeputado"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txtNomeDeputado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btVoltarDeputado"
+        android:text="Nome"
+        android:textSize="34sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNascimento"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/imgDeputado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Deputado"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:minWidth="150dp"
+        android:minHeight="150dp"
+        android:layout_below="@+id/txtSiglaPartido"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/blueGremio"
+        app:itemIconTint="@drawable/selector"
+        app:itemPaddingBottom="10dp"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+</RelativeLayout>
